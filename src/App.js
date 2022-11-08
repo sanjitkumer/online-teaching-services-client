@@ -1,10 +1,15 @@
-import { clear } from '@testing-library/user-event/dist/clear';
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
+import router from './Router/Routes/Routes';
 
 function App() {
+
+ 
+
+
   return (
     <div>
-     <h2>This is app js</h2>
+       <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
