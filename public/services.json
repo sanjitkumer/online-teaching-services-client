@@ -1,0 +1,158 @@
+[
+    {   
+        "_id": "1",
+        "service_id": "04",
+        "title": "Principal Of Accounting",
+        "img": "https://www.bookjunglejamaica.com/lib/uploads/2021/03/9781510436657.jpg",
+        "price": "200.00",
+        "description": "Accounting is the process of recording financial transactions pertaining to a business. The accounting process includes summarizing, analyzing, and reporting these transactions to oversight agencies, regulators, and tax collection entities. The financial statements used in accounting are a concise summary of financial transactions over an accounting period, summarizing a company's operations, financial position,and cashflow. Regardless of the size of a business, accounting is a necessary function for decision making, cost planning, and measurement of economic performance. A bookkeeper can handle basic accounting needs, but a Certified Public Accountant (CPA) should be utilized for larger or more advanced accounting tasks",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "2",
+        "service_id": "05",
+        "title": "Financial Management",
+        "img": "https://dynamics.folio3.com/blog/wp-content/uploads/2021/04/Financial-Management.png",
+        "price": "400.00",
+        "description": "One of the primary objectives of all businesses is to gain financial independence. However, to be able to realize the goal of financial independence, business owners are required to understand the potential consequence of their management decisions regarding various financial aspects including profits, cash flows, financial risks, and others. The overall financial performance of businesses is directly influenced by the performance of each of the various financial decisions made by business owners and executives. For most startups, the initial period is marked by financial losses and negative cash flows. This makes it even more important for startups to have a definite financial management plan to ensure the availability of enough cash with the company to pay employees, and suppliers, even at times when the cash outflow exceeds the cash inflow. This also means that business owners are required to make accurate financial projections that can take into account such negative cash flows, and help them to be prepared with the backup funding till the time the business becomes profitable.",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id":"3",
+        "service_id": "01",
+        "title": "spoken English",
+        "img": "https://www.zenithguidance.com/wp-content/uploads/2021/02/spoken-english.jpg",
+        "price": "500.00",
+        "description": "Find the lowest price for Online Degrees Education today! Now on sale at GigaPromo. GigaPromo is the website to compare Online Degrees Education. Search and save now! Simple Search. Cheap Prices. Large Selection. Compare Simply. Always Sale. The Best Price. Save Online. Full Offer. Compare Online. Services: Compare webshops, Compare products, Find the best deal, Lots of offers.",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "4",
+        "service_id": "02",
+        "title": "General Science",
+        "img": "https://ischoolconnect.com/blog/wp-content/uploads/2022/07/general-science.png",
+        "price": "5550.00",
+        "description": "Check your knowledge by solving questions and answers on General Science. it'll help learners for preparing competitive examinations and can be ready to score better as all the resources required to check General Science are provided here. We tried to simplify the complexities of a number of topics like chemistry, biology, and physics within the type of questions and answers in order that preparation becomes easy for the scholars.Check your knowledge by solving questions and answers on General Science. it'll help learners for preparing competitive examinations and can be ready to score better as all the resources required to check General Science are provided here. We tried to simplify the complexities of a number of topics like chemistry, biology, and physics within the type of questions and answers in order that preparation becomes easy for the scholars.",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "5",
+        "service_id": "03",
+        "title": "Basic Computer",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEcq_NYmjueWNDyQ5533G29dSb_G1hdyrfw&usqp=CAU",
+        "price": "30.00",
+        "description": "Learning is the key to achieving a person’s full potential. Human beings are uniquely adapted to learn and can learn throughout their lifespan. For people, learning does not stop after high school, college or graduate school. People who continue to learn are able to transform their lives and become more successful at home, more successful with their families, more successful at work and more successful within their local community.Learning is the key to achieving a person’s full potential. Human beings are uniquely adapted to learn and can learn throughout their lifespan. For people, learning does not stop after high school, college or graduate school. People who continue to learn are able to transform their lives and become more successful at home, more successful with their families, more successful at work and more successful within their local community.",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "6",
+       "service_id": "06",
+        "title": "Business Math",
+        "img": "https://letpasser.com/wp-content/uploads/2020/11/LET-Review.png",
+        "price": "20.00",
+        "description": "business math is subject.Business Mathematics is highly related to the Statistics concepts which give solutions to business problems. In business, we deal with the exchange of money or products, which have a monetary value. Each business leads to some profit and some loss. To identify these factors, we have to study the primary topics of Maths such as formulas to find a profit, loss, their percentages, discount, etc. Even Though, the requirement of this subject does not contain pure Maths, it needs Mathematical thinking ",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    }
+]
