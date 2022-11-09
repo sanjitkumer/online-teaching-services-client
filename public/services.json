@@ -1,6 +1,5 @@
 [
     {   
-        "_id": "1",
         "service_id": "04",
         "title": "Principal Of Accounting",
         "img": "https://www.bookjunglejamaica.com/lib/uploads/2021/03/9781510436657.jpg",
@@ -26,7 +25,6 @@
         ]
     },
     {
-        "_id": "2",
         "service_id": "05",
         "title": "Financial Management",
         "img": "https://dynamics.folio3.com/blog/wp-content/uploads/2021/04/Financial-Management.png",
@@ -52,7 +50,6 @@
         ]
     },
     {
-        "_id":"3",
         "service_id": "01",
         "title": "spoken English",
         "img": "https://www.zenithguidance.com/wp-content/uploads/2021/02/spoken-english.jpg",
@@ -78,7 +75,6 @@
         ]
     },
     {
-        "_id": "4",
         "service_id": "02",
         "title": "General Science",
         "img": "https://ischoolconnect.com/blog/wp-content/uploads/2022/07/general-science.png",
@@ -104,7 +100,6 @@
         ]
     },
     {
-        "_id": "5",
         "service_id": "03",
         "title": "Basic Computer",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiEcq_NYmjueWNDyQ5533G29dSb_G1hdyrfw&usqp=CAU",
@@ -130,7 +125,6 @@
         ]
     },
     {
-        "_id": "6",
        "service_id": "06",
         "title": "Business Math",
         "img": "https://letpasser.com/wp-content/uploads/2020/11/LET-Review.png",

@@ -1,12 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import img from '../../assets/login/images.png'
+import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 
 const Login = () => {
 
+    const {login} = useContext(AuthContext);
+
+    // const location = useLocation();
+    // const navigate = useNavigate();
+
     const handleLogIn = event =>{
         event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        login(email, password)
+        .then(result =>{
+          const user = result.user;
+          console.log(user);
+        //   navigate(from, {replace: true})
+        })
+        .catch(error => console.log(error));
     }
+
     return (
         <div>
             <div className="hero w-full my-20">
