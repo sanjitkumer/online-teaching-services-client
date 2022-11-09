@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img from '../../assets/login/images.png'
 
 const Login = () => {
@@ -37,7 +38,7 @@ const Login = () => {
                 <input className="btn btn-primary" type="submit" value="Login" />
               </div>
             </form>
-            {/* <p className='text-center'>New to Genius Car  <Link className='text-orange-600' to="/signup" > Signup</Link> </p> */}
+            <p className='text-center'>New to Online Teaching services  <Link className='text-orange-600' to="/signup" > Signup</Link> </p>
           </div>
         </div>
       </div>
