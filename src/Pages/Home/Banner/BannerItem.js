@@ -10,16 +10,16 @@ const BannerItem = ({slide}) => {
         <img src={image} alt="" className="w-full h-full rounded-xl" />
         </div> 
 
-          <div  className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/4" >
+          <div  className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/4 " >
            <h1 className='text-6xl font-bold text-white'>
             Affordable <br />
-            Price for Course <br />
-            Servicing
+            Price for Online <br />
+            Teaching Service.
            </h1>
           </div>
 
           <div  className="absolute flex justify-start transform -translate-y-1/2 w-2/5 left-24 top-1/2" >
-           <p className=' text-xl text-white'> There are many variations of passages of available, But The Majority Have Suffered Alteration In Some Form. </p>
+           <p className=' text-xl text-white '> After establishing teaching volume commitments and pricing arrangements with schools, SBI can provide trained teaching. </p>
           </div>
 
           <div  className="absolute flex justify-end transform -translate-y-1/2 w-2/5 left-24 top-3/4" >

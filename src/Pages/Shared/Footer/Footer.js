@@ -10,17 +10,16 @@ const Footer = () => {
         </div> 
         <div>
           <span className="footer-title">Services</span> 
-          <a href="/" className="link link-hover">Branding</a> 
-          <a href="/" className="link link-hover">Design</a> 
-          <a href="/" className="link link-hover">Marketing</a> 
-          <a href="/" className="link link-hover">Advertisement</a>
+          <a href="/" className="link link-hover">Principal Of Accounting</a> 
+          <a href="/" className="link link-hover">Financial Management</a> 
+          <a href="/" className="link link-hover">spoken English</a> 
+          <a href="/" className="link link-hover">General Science</a>
         </div> 
         <div>
-          <span className="footer-title">Company</span> 
+          <span className="footer-title">Details</span> 
           <a href="/" className="link link-hover">About us</a> 
           <a href="/" className="link link-hover">Contact</a> 
-          <a href="/" className="link link-hover">Jobs</a> 
-          <a href="/" className="link link-hover">Press kit</a>
+          <a href="/" className="link link-hover">Skill</a> 
         </div> 
         <div>
           <span className="footer-title">Legal</span> 

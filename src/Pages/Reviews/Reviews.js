@@ -3,24 +3,40 @@ import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import ReviewRow from './ReviewRow';
 
 const Reviews = () => {
-    const {user} = useContext(AuthContext);
+    const {user, logOut} = useContext(AuthContext);
     const[reviews, setReviews] = useState([])
 
     useEffect(() =>{
-        fetch(`http://localhost:5000/reviews?email=${user?.email}`)
-        .then(res => res.json())
-        .then(data => setReviews(data))
-    },[user?.email])
+        fetch(`http://localhost:5000/reviews?email=${user?.email}`, {
+          headers: {
+            authorization: `Bearer ${localStorage.getItem("services-token")}`
+          }
+        })
+        .then(res => {
+          if (res.status === 401 || res.status === 403) {
+              return logOut();
+          }
+          return res.json();
+      })
+
+      .then(data => {
+        setReviews(data);
+    })
+}, [user?.email, logOut])
+    
 
     const handleDelete = id =>{
         const proceed = window.confirm('Are you want to cancel this Services');
         if(proceed){
             fetch(`http://localhost:5000/reviews/${id}`, {
-                method: 'DELETE'
+                method: 'DELETE',
+                headers: {
+                  authorization: `Bearer ${localStorage.getItem("services-token")}`
+                }
             })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 if(data.deleteCount > 0)
                 alert ('deleted successfully')
                 const remaining = reviews.filter(odr => odr._id !==id);
@@ -34,7 +50,8 @@ const Reviews = () => {
       fetch(`http://localhost:5000/reviews/${id}`, {
         method: 'PATCH',
         headers: {
-           'content-type': 'application/json'
+           'content-type': 'application/json',
+           authorization: `Bearer ${localStorage.getItem('genius-token')}`
         },
         body: JSON.stringify({status: 'Approved'})        
       })

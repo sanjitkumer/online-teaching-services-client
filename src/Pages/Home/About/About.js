@@ -13,13 +13,14 @@ const About = () => {
           </div>
          
           <div className='w-1/2'>
-              <p className='my-5 text-2xl font-bold text-orange-600'>About Us</p>
+              <p className='my-5 text-2xl font-bold text-orange-600'>Online Teaching Services</p>
             <h1 className="text-5xl font-bold">
               We are qualified <br/>
              & of experience <br />
-              in this field</h1>
-            <p className="py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-            <p className='py-4'>the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.  </p>
+              in this teaching Service.</h1>
+            <p className="py-6">Online Teaching Services is a growing community of teachers from different multicultural backgrounds who connects learners with the future. We focus on hiring and training ESL teachers. We deliver online classes in different formats to students based in different countries providing a very enriching multicultural learning environment. We service the world's largest provider of English language training. </p>
+
+            <p className='py-4'>SBI also works with primary and high schools in China to deliver group ESL classes within their school curriculum. With such courses we can follow a standard curriculum provided by the school or design a curriculum to meet a school's requirements.</p>
             <button className="btn btn-primary">Get More Info</button>
           </div>
         </div>
