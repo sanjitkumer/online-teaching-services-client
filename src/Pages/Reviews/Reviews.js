@@ -13,7 +13,7 @@ const Reviews = () => {
     },[user?.email])
 
     const handleDelete = id =>{
-        const proceed = window.confirm('Are you want to cancel this order');
+        const proceed = window.confirm('Are you want to cancel this Services');
         if(proceed){
             fetch(`http://localhost:5000/reviews/${id}`, {
                 method: 'DELETE'
@@ -67,7 +67,7 @@ const Reviews = () => {
      <th>Name</th>
      <th>Course Title</th>
      <th>Message</th>
-     <th>Result</th>
+     <th>Update</th>
    </tr>
  </thead>
  <tbody>
