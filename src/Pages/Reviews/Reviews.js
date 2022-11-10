@@ -1,21 +1,21 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
-import OrderRow from './OrderRow';
+import ReviewRow from './ReviewRow';
 
-const Orders = () => {
+const Reviews = () => {
     const {user} = useContext(AuthContext);
-    const[orders, setOrders] = useState([])
+    const[reviews, setReviews] = useState([])
 
     useEffect(() =>{
-        fetch(`http://localhost:5000/orders?email=${user?.email}`)
+        fetch(`http://localhost:5000/reviews?email=${user?.email}`)
         .then(res => res.json())
-        .then(data => setOrders(data))
+        .then(data => setReviews(data))
     },[user?.email])
 
     const handleDelete = id =>{
         const proceed = window.confirm('Are you want to cancel this order');
         if(proceed){
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`http://localhost:5000/reviews/${id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())
@@ -23,15 +23,15 @@ const Orders = () => {
                 console.log(data);
                 if(data.deleteCount > 0)
                 alert ('deleted successfully')
-                const remaining = orders.filter(odr => odr._id !==id);
-                setOrders(remaining);
+                const remaining = reviews.filter(odr => odr._id !==id);
+                setReviews(remaining);
             })           
         }
 
     }
 
     const handleStatusUpdate = id => {
-      fetch(`http://localhost:5000/orders/${id}`, {
+      fetch(`http://localhost:5000/reviews/${id}`, {
         method: 'PATCH',
         headers: {
            'content-type': 'application/json'
@@ -42,12 +42,12 @@ const Orders = () => {
       .then(data =>{
         console.log(data);
         if(data.modifiedCount > 0) {
-          const remaining = orders.filter(odr => odr._id !== id);
-          const approving = orders.find(odr => odr._id === id);
+          const remaining = reviews.filter(odr => odr._id !== id);
+          const approving = reviews.find(odr => odr._id === id);
           approving.status = 'Approved'
 
-          const newOrders = [approving, ...remaining];
-          setOrders(newOrders);
+          const newReviews = [approving, ...remaining];
+          setReviews(newReviews);
         }
       })
     }
@@ -57,29 +57,27 @@ const Orders = () => {
 
     return (
         <div>
-        <h2 className="text-5xl">You have {orders.length}</h2> 
+        <h2 className="text-5xl">You have review : {reviews.length}</h2> 
         <div className="overflow-x-auto w-full">
 <table className="table w-full">
 
  <thead>
    <tr>
-     <th>
-      
-     </th>
+     <th>Delete</th>
      <th>Name</th>
-     <th>Job</th>
+     <th>Course Title</th>
      <th>Message</th>
-     <th></th>
+     <th>Result</th>
    </tr>
  </thead>
  <tbody>
      {
-         orders.map(order => <OrderRow
-         key={order._id}
-         order={order}
+         reviews.map(review => <ReviewRow
+         key={review._id}
+         review={review}
          handleDelete ={handleDelete}
          handleStatusUpdate = {handleStatusUpdate}            
-         ></OrderRow>)
+         ></ReviewRow>)
      }
          
  </tbody>
@@ -92,4 +90,4 @@ const Orders = () => {
     );
 };
 
-export default Orders;
+export default Reviews;

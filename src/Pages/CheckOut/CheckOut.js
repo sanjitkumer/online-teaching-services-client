@@ -26,7 +26,7 @@ const CheckOut = () => {
         message
     }
 
-    fetch('http://localhost:5000/orders', {
+    fetch('http://localhost:5000/reviews', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'
@@ -48,9 +48,11 @@ const CheckOut = () => {
 
     return (
         <div>
+            
         <form onSubmit={handlePlaceOrder}>
-            <h2 className="text-4xl">You are about to orders: {title}</h2>
+            <h2 className="text-4xl">You are about to courses: {title}</h2>
             <h4 className="text-3xl">{price}</h4>
+
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
             <input name="firstName" type="text" placeholder="First Name" className="input w-full input-bordered" />
             <input name="lastName" type="text" placeholder="Last Name" className="input w-full input-bordered" />

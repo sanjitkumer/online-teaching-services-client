@@ -2,14 +2,14 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-const OrderRow = ({order, handleDelete, handleStatusUpdate}) => {
-    const {_id, serviceName, phone, customer, price, service, status}= order;
-    const [orderService, setOrderService]= useState({})
+const ReviewRow = ({review, handleDelete, handleStatusUpdate}) => {
+    const {_id, serviceName, phone, customer, price, service, status, message}= review;
+    const [reviewService, setReviewService]= useState({})
 
     useEffect(() =>{
         fetch(`http://localhost:5000/services/${service}`)
         .then(res => res.json())
-        .then(data => setOrderService(data));
+        .then(data => setReviewService(data));
     },[service])
 
   
@@ -28,8 +28,8 @@ const OrderRow = ({order, handleDelete, handleStatusUpdate}) => {
                     <div className="avatar">
                     <div className="rounded w-24 h-24">
                     {
-                        orderService?.img &&
-                        <img src={orderService.img} alt="Avatar Tailwind CSS Component" />
+                        reviewService?.img &&
+                        <img src={reviewService.img} alt="Avatar Tailwind CSS Component" />
                     }
 
                     </div>
@@ -47,7 +47,7 @@ const OrderRow = ({order, handleDelete, handleStatusUpdate}) => {
                 <span className="badge badge-ghost badge-sm">${price}</span>
             </td>
 
-            <td>Purple</td>
+            <td><div>{message}</div></td>
 
             <th>
             <button
@@ -58,4 +58,4 @@ const OrderRow = ({order, handleDelete, handleStatusUpdate}) => {
     );
 };
 
-export default OrderRow;
+export default ReviewRow;
