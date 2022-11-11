@@ -38,6 +38,7 @@ const Reviews = () => {
             .then(data => {
                 // console.log(data);
                 if(data.deleteCount > 0)
+               
                 alert ('deleted successfully')
                 const remaining = reviews.filter(odr => odr._id !==id);
                 setReviews(remaining);

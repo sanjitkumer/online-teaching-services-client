@@ -44,18 +44,13 @@ const Header = () => {
 
     <Link className="btn btn-ghost normal-case text-xl h-30 w-20 rounded-xl">
         <img  src={logo} alt="" />        
-    </Link>
-
-    
+    </Link>    
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal p-0">
       {menuItems}
     </ul>
-  </div>
-  <div className="navbar-end">
-    <button className="btn">Get started</button>
-  </div>
+  </div> 
 </div>
     );
 };

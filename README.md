@@ -1,3 +1,11 @@
+live link:https://superb-cassata-df5c72.netlify.app/
+
+* uses tailwind, daisyui component;
+* uses mongodb, firebase 
+* first  added header part , footer part
+* added services sector , serviceCart
+* added bannerItem
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
