@@ -12,14 +12,11 @@ const ReviewRow = ({review, handleDelete, handleStatusUpdate}) => {
         .then(data => setReviewService(data));
     },[service])
 
-  
-
-
     return (
         <tr>
             <th>
                 <label>
-                    <button onClick={() =>handleDelete(_id) } className='btn btn-ghost'>X</button>
+                    <button onClick={() =>handleDelete(_id) } className='btn btn-warning'>Delete</button>
                 </label>
             </th>
 

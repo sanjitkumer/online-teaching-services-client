@@ -69,42 +69,35 @@ const Reviews = () => {
         }
       })
     }
-
-
-
-
+    
     return (
-        <div>
-        <h2 className="text-5xl">You have review : {reviews.length}</h2> 
-        <div className="overflow-x-auto w-full">
-<table className="table w-full">
+        <div className='mb-8'>
+          <h2 className="text-5xl">You have review : {reviews.length}</h2> 
+           <div className="overflow-x-auto w-full">
+              <table className="table w-full">
+                  <thead>
+                      <tr>
+                        <th>Delete</th>
+                        <th>Name</th>
+                        <th>Course Title</th>
+                        <th>Message</th>
+                        <th>Update</th>
+                      </tr>
+                  </thead>
 
- <thead>
-   <tr>
-     <th>Delete</th>
-     <th>Name</th>
-     <th>Course Title</th>
-     <th>Message</th>
-     <th>Update</th>
-   </tr>
- </thead>
- <tbody>
-     {
-         reviews.map(review => <ReviewRow
-         key={review._id}
-         review={review}
-         handleDelete ={handleDelete}
-         handleStatusUpdate = {handleStatusUpdate}            
-         ></ReviewRow>)
-     }
-         
- </tbody>
- 
- 
- 
-</table>
-</div>
-</div>
+                  <tbody>
+                     {
+                       reviews.map(review => <ReviewRow
+                       key={review._id}
+                       review={review}
+                       handleDelete ={handleDelete}
+                       handleStatusUpdate = {handleStatusUpdate}            
+                       ></ReviewRow>)
+                      }         
+                  </tbody>
+               </table>
+            </div>
+         </div>
     );
 };
 

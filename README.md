@@ -1,4 +1,4 @@
-live link:https://superb-cassata-df5c72.netlify.app/
+live link:https://superb-cassata-df5c72.netlify.app
 
 * uses tailwind, daisyui component;
 * uses mongodb, firebase 

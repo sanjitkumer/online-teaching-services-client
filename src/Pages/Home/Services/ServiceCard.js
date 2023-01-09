@@ -11,7 +11,7 @@ const ServiceCard = ({service}) => {
 
                 {
                 description.length > 250 ?
-                <p>{description.slice(0, 250) + '...'} <Link to ={`/services/${_id}`}>Read more</Link> </p>
+                <p>{description.slice(0, 100) + '...'} <Link to ={`/services/${_id}`}><span className='text-blue-600'>Read more</span></Link> </p>
                 :
                 <p>{description}</p>
             }  

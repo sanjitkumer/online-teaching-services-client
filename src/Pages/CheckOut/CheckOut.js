@@ -53,18 +53,18 @@ const CheckOut = () => {
             
         <form onSubmit={handlePlaceOrder}>
             <h2 className="text-4xl">You are about to courses: {title}</h2>
-            <h4 className="text-3xl">{price}</h4>
+            <h4 className="text-3xl mt-4">{price}</h4>
 
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
-            <input name="firstName" type="text" placeholder="First Name" className="input w-full input-bordered" />
-            <input name="lastName" type="text" placeholder="Last Name" className="input w-full input-bordered" />
-            <input name="phone" type="text" placeholder="Your Phone" className="input w-full input-bordered" required/>
-            <input name="email" type="text" placeholder="Your email" defaultValue={user?.email} className="input w-full input-bordered" readOnly/>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4'>
+            <input name="firstName" type="text" placeholder="First Name" className="input w-full input-bordered mt-4" />
+            <input name="lastName" type="text" placeholder="Last Name" className="input w-full input-bordered mt-4" />
+            <input name="phone" type="text" placeholder="Your Phone" className="input w-full input-bordered mt-4" required/>
+            <input name="email" type="text" placeholder="Your email" defaultValue={user?.email} className="input w-full input-bordered mt-4" readOnly/>
             </div>
 
-            <textarea name="message" className='textarea textarea-bordered h-24 w-full' placeholder='Your message' required></textarea>
+            <textarea name="message" className='mt-4 textarea textarea-bordered h-24 w-full' placeholder='Your message' required></textarea>
 
-            <input className='btn' type="submit" value="place Your Order" />
+            <input className='btn  mt-4' type="submit" value="place Your Order" />
         
 
         </form>

@@ -2,6 +2,7 @@ import Main from "../../Layout/Main";
 import Blog from "../../Pages/Blog/Blog";
 import CheckOut from "../../Pages/CheckOut/CheckOut";
 import Home from "../../Pages/Home/Home/Home";
+import ServiceAdd from "../../Pages/Home/Services/ServiceAdd/ServiceAdd";
 import Services from "../../Pages/Home/Services/Services";
 import Login from "../../Pages/Login/Login";
 import Reviews from "../../Pages/Reviews/Reviews";
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+            path: '/serviceAdd',
+            element: <ServiceAdd></ServiceAdd>
+
         },
         {
             path: '/services',
