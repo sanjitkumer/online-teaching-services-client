@@ -11,17 +11,16 @@ const ServiceCard = ({service}) => {
 
                 {
                 description.length > 250 ?
-                <p>{description.slice(0, 100) + '...'} <Link to ={`/services/${_id}`}><span className='text-blue-600'>Read more</span></Link> </p>
+                <p>{description.slice(0, 100) + '...'} <Link to ={`/products/${_id}`}><span className='text-blue-600'>Read more</span></Link> </p>
                 :
                 <p>{description}</p>
             }  
-                {/* <p>${description.slice(0, 100) + '...'} <Link to ={`/services/${_id}`}>Read more</Link> </p> */}
 
                 <div className='card-actions justify-end'>
                 <p className='text-2xl text-orange-600 font-semibold'>$ {price} </p>               
                 <div className="card-actions justify-end">
                     <Link to={`/checkout/${_id}`}>
-                       <button className="btn btn-primary">Checkout</button>
+                       <button className="btn btn-primary">Order View</button>
                     </Link>
                 </div>
                 </div>

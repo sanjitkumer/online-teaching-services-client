@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Products from './Products/Products';
 import ServiceCard from './ServiceCard';
 
 const Services = () => {
@@ -23,6 +24,13 @@ const Services = () => {
                   service = {service}
                   ></ServiceCard>)
                 }
+
+                {/* {
+                    services.map(product=> <Products
+                    key={product._id}
+                    product = {product}                    
+                    ></Products>)
+                } */}
             </div>           
         </div>
     );

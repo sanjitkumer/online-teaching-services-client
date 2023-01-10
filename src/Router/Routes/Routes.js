@@ -2,6 +2,7 @@ import Main from "../../Layout/Main";
 import Blog from "../../Pages/Blog/Blog";
 import CheckOut from "../../Pages/CheckOut/CheckOut";
 import Home from "../../Pages/Home/Home/Home";
+import Products from "../../Pages/Home/Services/Products/Products";
 import ServiceAdd from "../../Pages/Home/Services/ServiceAdd/ServiceAdd";
 import Services from "../../Pages/Home/Services/Services";
 import Login from "../../Pages/Login/Login";
@@ -28,6 +29,12 @@ const router = createBrowserRouter([
         {
             path: '/services',
             element: <Services></Services>
+
+        },
+        {
+            path: '/products/:id',
+            element: <Products></Products>,
+            loader:({params}) => fetch(`https://online-teaching-services-server.vercel.app/services/${params.id}`)
 
         },
         
