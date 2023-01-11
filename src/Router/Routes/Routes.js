@@ -23,8 +23,7 @@ const router = createBrowserRouter([
         },
         {
             path: '/serviceAdd',
-            element: <ServiceAdd></ServiceAdd>
-
+            element: <ServiceAdd></ServiceAdd>,
         },
         {
             path: '/services',

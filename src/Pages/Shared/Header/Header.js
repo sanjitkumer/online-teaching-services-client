@@ -10,8 +10,7 @@ const Header = () => {
     logOut()
       .then()
       .catch();
-  }
-  
+  } 
 
   const menuItems = <>
     <li className='font-semibold'><Link to='/'>Home</Link></li>
@@ -30,7 +29,7 @@ const Header = () => {
 }     
 </>
     return (
-        <div className="navbar h-20 mb-4 bg-gray-300">
+        <div className="navbar h-20 mb-4 bg-gray-100">
           <div className="navbar-start">
              <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">

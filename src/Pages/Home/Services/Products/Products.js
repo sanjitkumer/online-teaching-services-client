@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Products = ({product}) => {   
     const products = useLoaderData();
-
     const { _id, img, price, title, description} = products;
 
     return (        
@@ -12,15 +11,14 @@ const Products = ({product}) => {
             <figure><img src={img} alt="Shoes" className='w-full h-full'/></figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>                
-                <p>{description}</p>          
-
+                <p>{description}</p>         
                 <div className='card-actions justify-end'>
-                <p className='text-2xl text-orange-600 font-semibold'>$ {price} </p>               
-                <div className="card-actions justify-end">
-                    <Link to={`/checkout/${_id}`}>
-                       <button className="btn btn-primary">Order View</button>
-                    </Link>
-                </div>
+                   <p className='text-2xl text-orange-600 font-semibold'>$ {price} </p>               
+                   <div className="card-actions justify-end">
+                      <Link to={`/checkout/${_id}`}>
+                        <button className="btn btn-accent">Booking Now</button>
+                      </Link>
+                   </div>
                 </div>
             </div>
         </div>

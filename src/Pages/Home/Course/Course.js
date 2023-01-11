@@ -4,7 +4,7 @@ import images1 from '../../../assets/about/images1.png'
 
 const Course = () => {
     return (
-        <div className="hero my-20">
+        <div className="hero my-10">
         <div className="hero-content flex-col lg:flex-row"> 
           <div className='w-1/2'>
               <p className='my-5 text-2xl font-bold text-orange-600'>Services details</p>
